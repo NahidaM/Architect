@@ -1,0 +1,872 @@
+/* SIDEBAR START  */
+
+.btn {
+  position: absolute;
+  top: -5px;
+  right: 50px;
+  height: 45px;
+  width: 45px;
+}
+
+.btn.click {
+  left: 260px;
+}
+
+.btn span {
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+
+.btn.click span:before {
+  content: "\f00d";
+}
+
+.sidebar {
+  width: 280px;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: -280px;
+  transition: left 0.4s ease;
+}
+
+.sidebar.show {
+  left: 0px;
+}
+
+.sidebar .text {
+  margin-top: 10px;
+  color: rgb(10, 10, 10);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+.sidebar .text h4 {
+  font-family: "Pacifico", cursive;
+}
+
+nav ul {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+}
+
+nav ul li {
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+nav ul li .a {
+  color: rgb(10, 9, 7);
+  text-decoration: none;
+  font-size: 16px;
+  padding-left: 10px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+  position: relative;
+}
+
+nav ul li .a.active {
+  color: cyan;
+  border-left-color: cyan;
+}
+
+nav .main h5 {
+  color: rgb(47, 47, 175);
+}
+nav .main ul li ul li a {
+  font-size: 17px;
+  color: #ffffff;
+  padding-left: 50px;
+}
+
+nav .main ul li ul .advert {
+  background-color: cornflowerblue;
+}
+
+nav .main ul li.active ul li a {
+  color: rgb(12, 2, 2);
+  border-left-color: cyan;
+}
+
+nav .main ul li ul {
+  display: none;
+}
+
+nav .main ul .dash-show.show {
+  display: block;
+}
+
+nav .main ul li a span {
+  position: absolute;
+  right: 50px;
+  top: 4px;
+  font-size: 18px;
+  transform: translate(-50%);
+  transition: transform 0.6s;
+}
+
+nav .main ul li a span.rotate {
+  transform: translate(-50%) rotate(-180deg);
+}
+nav .bootstrap h5 {
+  color: rgb(47, 47, 175);
+}
+nav .bootstrap ul li a span {
+  position: absolute;
+  right: 50px;
+  top: 4px;
+  font-size: 18px;
+  transform: translate(-50%);
+  transition: transform 0.6s;
+}
+nav .bootstrap ul li a:hover span {
+  transform: translate(-50%) rotate(-180deg);
+}
+
+nav .material h5 {
+  color: rgb(47, 47, 175);
+}
+nav .material ul li a span {
+  position: absolute;
+  right: 50px;
+  top: 4px;
+  font-size: 18px;
+  transform: translate(-50%);
+  transition: transform 0.6s;
+}
+nav .material ul li a:hover span {
+  transform: translate(-50%) rotate(-180deg);
+}
+
+nav .dashboard h5 {
+  color: rgb(47, 47, 175);
+}
+nav .dashboard ul li .first-li span {
+  position: absolute;
+  right: 50px;
+  top: 4px;
+  font-size: 18px;
+  transform: translate(-50%);
+  transition: transform 0.6s;
+}
+
+nav .dashboard ul li .first-li:hover span {
+  transform: translate(-50%) rotate(-180deg);
+}
+
+nav .charts h5 {
+  color: rgb(47, 47, 175);
+}
+
+/* SIDEBAR END */
+
+/* MIDDLE NAV START */
+/* MIDDLE NAV FIRST PART START */
+.nav {
+  height: 40px;
+  background-color: aliceblue;
+  margin-top: 10px;
+}
+
+.ul-list {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.search {
+  background-color: rgb(182, 219, 207);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.fa-search {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  font-size: 15px;
+  transform: rotate(90deg);
+}
+
+.menu-select {
+  margin-left: 15px;
+  margin-top: 7px;
+}
+
+.menu-select .fa-bars {
+  font-size: 14px;
+  color: rgb(110, 219, 183);
+}
+
+.menu-select h6 {
+  font-size: 14px;
+  margin-top: -20px;
+  margin-left: 19px;
+}
+
+.set {
+  background-color: rgb(236, 53, 53);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+.settings {
+  margin-top: 7px;
+}
+.settings h6 {
+  margin-left: 5px;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.set p {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  font-size: 15px;
+}
+
+.projects {
+  margin-left: 15px;
+  margin-top: 7px;
+}
+.projects .fa-cog {
+  font-size: 14px;
+  color: rgb(145, 212, 190);
+}
+
+.projects h6 {
+  font-size: 14px;
+  margin-top: -20px;
+  margin-left: 19px;
+}
+
+/* MIDDLE NAV FIRST PART END*/
+
+/* MIDDLE NAV SECOND PART START   */
+
+.ul-list-2 {
+  list-style: none;
+  display: flex;
+}
+.bars {
+  background-color: rgb(182, 219, 207);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.bars .fa-bars {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 15px;
+}
+
+.microphone {
+  background-color: rgb(250, 198, 252);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.microphone .fa-bullhorn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 15px;
+  color: rgb(250, 60, 60);
+}
+
+.flag {
+  background-color: rgb(182, 219, 207);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.flag img {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 15px;
+  width: 15px;
+}
+
+.ring {
+  background-color: rgb(182, 219, 207);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.ring .fa-ring {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 15px;
+  color: rgb(128, 235, 85);
+}
+
+.person span {
+  color: rgb(182, 219, 207);
+  font-size: 25px;
+  margin: 10px;
+}
+.person img {
+  height: 30px;
+  width: 30px;
+  margin-left: -9px;
+  margin-top: -12px;
+  border-radius: 50%;
+}
+
+.person p b {
+  font-size: 12px;
+}
+.person p {
+  font-size: 12px;
+  margin-left: 70px;
+  margin-top: -35px;
+}
+
+.cal {
+  background-color: rgb(22, 102, 221);
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.cal .fa-calendar {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 15px;
+  color: rgb(236, 243, 243);
+}
+.bars2 span {
+  color: rgb(182, 219, 207);
+  font-size: 25px;
+  margin: 10px;
+}
+.bars2 .fa-bars {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+/* MIDDLE NAV SECOND PART END   */
+/* MIDDLE NAV END */
+
+/* MINI NAV START */
+.advertis .car {
+  background-color: rgb(183, 184, 185);
+  border-radius: 3px;
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.advertis .car .fa-car {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  font-size: 35px;
+  color: rgb(250, 60, 60);
+}
+
+.advertis .text {
+  margin-left: 95px;
+  margin-top: -58px;
+}
+
+.advertis .text p {
+  font-size: 14px;
+}
+
+.nav-2 .dark-btn {
+  background: black;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 3px;
+}
+.nav-2 .dark-btn .fa-star {
+  left: 10px;
+  top: 11px;
+  position: absolute;
+  color: white;
+}
+
+.nav-2 .new-btn {
+  background: green;
+  position: relative;
+  height: 40px;
+  width: 140px;
+  margin-left: -200px;
+  border-radius: 3px;
+}
+.nav-2 .new-btn .fa-plus {
+  left: 10px;
+  top: 11px;
+  position: absolute;
+  color: white;
+}
+
+.nav-2 .new-btn p {
+  margin-left: 35px;
+  margin-top: 7px;
+  color: white;
+}
+/* MINI NAV END */
+/* REPORT START */
+.report {
+  height: 30px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: black;
+  margin-left: 370px;
+  margin-top: 15px;
+}
+
+.report p {
+  font-size: 15px;
+  color: white;
+  padding-top: 2px;
+}
+/* REPORT END */
+
+/* TIMEDYN SECTION START */
+/* TIMELINE SECTION START */
+.timeline {
+  height: 360px;
+  width: 350px;
+  background-color: rgb(254, 255, 255);
+  margin-left: 20px;
+}
+.timeline .time-exam {
+  padding-top: 15px;
+  padding-left: 15px;
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+.timeline .time-exam h6 i {
+  padding-left: 150px;
+  font-size: 18px;
+}
+
+.timeline .list {
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+
+.timeline .list ul {
+  list-style: none;
+}
+
+.timeline .list ul li {
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.timeline .list ul li i {
+  font-size: 10px;
+}
+
+.timeline .list ul li:first-child {
+  padding-top: 5px;
+}
+
+.allmessages {
+  height: 30px;
+  width: 180px;
+  border-radius: 20px;
+  background-color: black;
+  margin-left: 75px;
+  margin-top: 15px;
+}
+
+.allmessages p {
+  font-size: 15px;
+  color: white;
+  padding-top: 2px;
+}
+/* TIMELINE SECTION END */
+/*  DYNAMIC SECTION START */
+.dynamictabl {
+  height: 355px;
+  width: 555px;
+  background-color: rgb(254, 255, 255);
+  margin-left: -25px;
+}
+
+.dynamictabl .tablhead {
+  padding-top: 15px;
+  padding-left: 15px;
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+
+.dynamictabl .tablhead h6 i {
+  font-size: 18px;
+}
+.dynamictabl .tablhead h6 span {
+  background: black;
+  color: white;
+  margin-left: 260px;
+}
+
+.dynamictabl .tab table tr {
+  border-bottom: 1px solid rgb(189, 185, 185);
+  height: 40px;
+}
+.dynamictabl .tab table tr td {
+  padding: 0px 15px;
+}
+.dynamictabl .tab table tr th {
+  padding: 0px 15px;
+}
+.dynamictabl .tab table tr td img {
+  height: 20px;
+  width: 20px;
+}
+tr:nth-child(even) {
+  background: rgb(218, 216, 216);
+}
+
+.num-area {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  overflow-x: hidden;
+  color: #666666;
+}
+
+.num-area .button {
+  margin-left: 409px;
+  margin-top: -31px;
+  overflow: hidden;
+}
+
+.num-area nav ul li a {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 5px;
+  margin-bottom: 0;
+  color: #1ebeb6;
+}
+
+.pagination {
+  padding-left: 0;
+  padding-top: 5px;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.pagination .page-item {
+  height: 50px;
+  width: 50px;
+}
+/*  DYNAMIC SECTION END */
+
+/* TIMEDYN SECTION END */
+/* CHAT-TASKS SECTION START  */
+/* CHAT START  */
+.msg {
+  max-width: 500 !important;
+  margin: auto;
+  margin-top: 4%;
+  font-family: sans-serif;
+  letter-spacing: 0, 5px;
+}
+img {
+  width: 100%;
+}
+
+.msg-header {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 45px;
+  border-bottom: none;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.msg-header .fa-print {
+  color: rgb(216, 91, 133);
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.msg-header .fa-windows {
+  float: right;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.msg-header p {
+  font-size: 18px;
+}
+
+.msg-inbox {
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.chats {
+  padding: 20px 10px 0 10px;
+  background-color: white;
+}
+
+.msg-page {
+  height: 213px;
+  overflow-y: auto;
+}
+
+.received-chats-img {
+  /* display: inline-block; */
+  width: 40px;
+  float: left;
+}
+
+.received-msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 90%;
+}
+
+.received-msg-inbox {
+  width: 100%;
+}
+
+.received-msg-inbox p {
+  background-color: #8beaf7;
+  border-radius: 10px;
+  color: #9e8f8f;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+
+.time {
+  color: #777777;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.outgoing-chats {
+  overflow: hidden;
+  margin: 26px 20px;
+}
+
+.outgoing-chats-msg p {
+  background-color: #8beaf7;
+  border-radius: 10px;
+  color: #9e8f8f;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+  position: relative;
+}
+.outgoing-chats-msg {
+  float: left;
+  width: 87%;
+}
+
+.outgoing-chats-img {
+  display: inline-block;
+  width: 40px;
+  margin-left: 11px;
+}
+
+.input-group {
+  position: absolute;
+  top: 253px;
+  outline: none !important;
+  border-radius: 20px;
+  background-color: #fff;
+  width: 89%;
+  margin-left: 15px;
+}
+/* CHAT END  */
+/* TASK START */
+.task {
+  max-width: 500 !important;
+  margin: auto;
+  margin-top: 4%;
+  font-family: sans-serif;
+  letter-spacing: 0, 5px;
+  background-color: white;
+}
+
+.task-page {
+  height: 280px;
+  /* overflow-y: auto; */
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.task-header {
+  width: 100%;
+  height: 45px;
+  border-bottom: none;
+  display: inline-block;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+
+.task-header .fa-list {
+  color: rgb(84, 212, 195);
+  font-size: 25px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.task-header .fa-windows {
+  float: right;
+  margin-right: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.task-header p {
+  font-size: 18px;
+}
+.msge-inbox .check {
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+.msge-inbox .check p {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.msge-inbox .check p {
+  border-left: 2px solid orange;
+  margin-bottom: 0;
+}
+.msge-inbox .check p .fa-square {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.msge-inbox .check p span {
+  background: red;
+  font-weight: 600;
+  padding: 5px;
+  color: white;
+}
+.msge-inbox .check p .italic {
+  margin-left: 23px;
+  font-size: 15px;
+}
+
+.msge-inbox .drop-menu p {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.msge-inbox .drop-menu p {
+  border-left: 2px solid purple;
+  margin-bottom: 0;
+}
+.msge-inbox .drop-menu p .fa-square {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.msge-inbox .drop-menu p span {
+  background: rgb(87, 153, 197);
+  font-weight: 600;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.msge-inbox .badgetask {
+  border-bottom: 1px solid rgb(189, 185, 185);
+}
+.msge-inbox .badgetask p {
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.msge-inbox .badgetask p {
+  border-left: 2px solid rgb(80, 17, 182);
+  margin-bottom: 0;
+}
+.msge-inbox .badgetask p .fa-square {
+  margin-right: 10px;
+  text-align: center;
+}
+
+.msge-inbox .badgetask p span {
+  background: rgb(58, 167, 44);
+  font-weight: 600;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  margin-left: 60px;
+}
+.msge-inbox .badgetask p .italic {
+  margin-left: 23px;
+  font-size: 15px;
+}
+
+.task .task-page .end p {
+  margin-left: 315px;
+  margin-top: 30px;
+  color: blue;
+}
+
+.task .task-page .end p span {
+  color: white;
+  background: blue;
+  padding: 8px;
+}
+
+.setting {
+  position: relative;
+}
+
+.setting .fa-cog {
+  color: black;
+  position: absolute;
+  font-size: 15px;
+  bottom: 37px;
+  right: -5px;
+  background-color: yellow;
+  padding: 15px;
+  border-radius: 50%;
+}
+/* TASK END */
+/* CHAT-TASKS SECTION START  */

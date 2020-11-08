@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Architect</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/029e8bcc7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- SIDEBAR START -->
+          <div class="col-lg-3">
+            <div class="btn">
+              <span class="fas fa-bars"></span>
+            </div>
+            <nav class="sidebar">
+              <div class="text"><h4>Architect</h4></div>
+              <div class="main">
+                <h5>Main navigation</h5>
+                <ul>
+                  <li>
+                    <a class="a dash-btn" href="#"
+                      ><i
+                        class="fas fa-rocket"
+                        style="transform: rotate(315deg)"
+                      ></i>
+                      Dashboards <span class="fas fa-angle-down first"></span>
+                    </a>
+                    <ul class="dash-show">
+                      <li><a class="a" href="#">Analytics</a></li>
+                      <li><a class="a advert" href="#">Advertisement</a></li>
+                      <li><a class="a" href="#">Management</a></li>
+                      <li><a class="a" href="#">Helpdesk</a></li>
+                      <li><a class="a" href="#">Monitoring</a></li>
+                      <li><a class="a" href="#">Crypto</a></li>
+                      <li><a class="a" href="#">Project Management</a></li>
+                      <li><a class="a" href="#">Product</a></li>
+                      <li><a class="a" href="#">Statistics</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-folder"></i> Pages
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-layer-group"></i> Applications
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="bootstrap">
+                <h5>Bootstrap components</h5>
+                <ul>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="far fa-gem"></i> Elements
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-car"></i> Components
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fab fa-wpforms"></i> From Elements
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-cheese"></i> From Widgets
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-table"></i> Tables
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="material">
+                <h5>Material components</h5>
+                <ul>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="far fa-sun"></i> Form Controls
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-layer-group"></i> Layout
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-rupee-sign"></i> Buttons & Indicators
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dashboard">
+                <h5>Dashboard boxes</h5>
+                <ul>
+                  <li>
+                    <a class="a first-li" href="#"
+                      ><i class="far fa-chart-bar"></i> Chart Boxes
+                      <span class="fas fa-angle-down"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-address-card"></i> Profile Boxes</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="charts">
+                <h5>Charts</h5>
+                <ul>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-chart-area"></i> ChartJS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-chart-pie"></i> Apex Charts</a
+                    >
+                  </li>
+                  <li>
+                    <a class="a" href="#"><i class="fas fa-bolt"></i> Gauges</a>
+                  </li>
+                  <li>
+                    <a class="a" href="#"
+                      ><i class="fas fa-chart-line"></i> Chart Sparklines</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <!-- SIDEBAR END -->
+
+          <!-- INFORMATION START -->
+          <div class="col-lg-9">
+            <div class="bg" style="background: rgb(236, 235, 235)">
+              <!-- MIDDLE NAV START -->
+              <div class="nav">
+                <!-- MIDDLE NAV FIRST PART START -->
+                <div class="col-6">
+                  <ul class="ul-list">
+                    <li class="search"><i class="fas fa-search"></i></li>
+                    <li class="menu-select">
+                      <i class="fas fa-bars"></i>
+                      <h6>Mega Menu <i class="fas fa-angle-down"></i></h6>
+                    </li>
+                    <li class="set">
+                      <p>4</p>
+                    </li>
+                    <li class="settings">
+                      <h6>Settings <i class="fas fa-angle-down"></i></h6>
+                    </li>
+                    <li class="projects">
+                      <i class="fas fa-cog"></i>
+                      <h6>Projects <i class="fas fa-angle-down"></i></h6>
+                    </li>
+                  </ul>
+                </div>
+                <!-- MIDDLE NAV FIRST PART END -->
+
+                <!-- MIDDLE NAV SECOND PART START  -->
+                <div class="col-6">
+                  <ul class="ul-list-2">
+                    <li class="bars"><i class="fas fa-bars"></i></li>
+                    <li class="microphone"><i class="fas fa-bullhorn"></i></li>
+                    <li class="flag"><img src="img/flag.jpg" alt="" /></li>
+                    <li class="ring"><i class="fas fa-ring"></i></li>
+                    <li class="person">
+                      <span>|</span>
+                      <img src="img/teacher.png" alt="" />
+                      <i class="fas fa-sort-down"></i>
+                      <p>
+                        <b>Robert Murdoch</b>
+                        <br />
+                        Angular Developer
+                      </p>
+                    </li>
+                    <li class="cal">
+                      <i class="fas fa-calendar"></i>
+                    </li>
+                    <li class="bars2">
+                      <span>|</span><i class="fas fa-bars"></i>
+                    </li>
+                  </ul>
+                </div>
+                <!-- MIDDLE NAV SECOND PART START  -->
+              </div>
+              <!-- MIDDLE NAV END -->
+              <!-- MINI NAV START -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="nav-2">
+                    <nav class="navbar navbar-light bg-light mt-2">
+                      <a class="navbar-brand">
+                        <div class="advertis">
+                          <div class="car">
+                            <i class="fas fa-car"></i>
+                          </div>
+                          <div class="text">
+                            <h5>Advertisement</h5>
+                            <p>
+                              Lorem ipsum dolor sit, amet adipisicins eligendi
+                              odio perferendis!
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dark-btn">
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <div class="new-btn">
+                        <i class="fas fa-plus"></i>
+                        <p><b>Create New</b></p>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <!-- MINI NAV END -->
+              <!-- CHART SECTION START -->
+              <div class="row">
+                <div class="col-4">
+                  <canvas id="myChart" width="100" height="80"> </canvas>
+                  <div class="Chart text-center">
+                    <div class="comp">
+                      <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>3M</h3>
+                    <h6>Cash Depisits</h6>
+                    <p>
+                      <i class="fas fa-angle-down"></i> 54,1% down last 30 days
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <canvas id="myChart2" width="100" height="80"></canvas>
+                  <div class="Chart2 text-center">
+                    <div class="grad">
+                      <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>1M</h3>
+                    <h6>Invested Dividents</h6>
+                    <p>
+                      Compared to YoY <i class="fas fa-angle-down"></i> 14,1%
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <canvas id="myChart3" width="100" height="80"></canvas>
+                  <div class="Chart3 text-center">
+                    <div class="diamon">
+                      <i class="far fa-gem"></i>
+                    </div>
+                    <h3>$294</h3>
+                    <h6>Withdrawals</h6>
+                    <p>Down by <i class="fas fa-angle-down"></i> 21,8%</p>
+                  </div>
+                </div>
+              </div>
+              <!-- CHART SECTION END -->
+              <!-- REPORT START -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="report text-center">
+                    <p>
+                      <i class="fas fa-paint-brush"></i> Wiew Complete Report
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- REPORT END -->
+              <!-- TIMEDYN SECTION START -->
+              <div class="TIMEDYN mt-3">
+                <div class="row">
+                  <!-- TIMELINE SECTION START -->
+                  <div class="col-5">
+                    <div class="timeline">
+                      <div class="time-exam">
+                        <h6>TIMELINE EXAMPLE <i class="fas fa-table"></i></h6>
+                      </div>
+                      <div class="list">
+                        <ul>
+                          <li>
+                            <i class="far fa-circle"></i> All Hands Meeting
+                          </li>
+                          <li>
+                            <i class="far fa-circle"></i> Yet another one, at
+                            <span style="color: rgb(8, 153, 8)">15:00 PM</span>
+                          </li>
+                          <li>
+                            <i class="far fa-circle"></i> Build the production
+                            release
+                          </li>
+                          <li style="color: rgb(8, 153, 8)">
+                            <i class="far fa-circle"></i> Something not
+                            important
+                          </li>
+                          <li>
+                            <i class="far fa-circle"></i> All Hands Meeting
+                          </li>
+                          <li>
+                            <i class="far fa-circle"></i> Yet another one, at
+                            <span style="color: rgb(8, 153, 8)">15:00 PM</span>
+                          </li>
+                          <li>
+                            <i class="far fa-circle"></i> Build the production
+                            release
+                          </li>
+                          <li style="color: rgb(8, 153, 8)">
+                            <i class="far fa-circle"></i> Something not
+                            important
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="allmessages text-center">
+                        <p>Wiew All Messages</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- TIMELINE SECTION END -->
+                  <!--   DYNAMIC SECTION START -->
+                  <div class="col-7">
+                    <div class="dynamictabl">
+                      <div class="tablhead">
+                        <h6>
+                          <i class="fas fa-tv"></i> Dynamic Tables
+                          <span>Refresh Remove</span>
+                        </h6>
+                      </div>
+                      <form
+                        class="mt-1 ml-2"
+                        style="
+                          border-bottom: 1px solid rgb(189, 185, 185);
+                          height: 40px;
+                        "
+                      >
+                        <label for="text">Full text search:</label>
+                        <input type="text" />
+                      </form>
+                      <div class="tab">
+                        <table style="width: 100%">
+                          <tr>
+                            <th>#</th>
+                            <th>Country</th>
+                            <th>Area</th>
+                            <th>Population</th>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <img src="img/RussianFlag.gif" alt="" /> Russia
+                            </td>
+                            <td>17,075,200</td>
+                            <td>146,989,754</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td><img src="img/france.jpg" alt="" /> France</td>
+                            <td>640,679</td>
+                            <td>64,979,548</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td><img src="img/flag.jpg" alt="" /> Germany</td>
+                            <td>357,114</td>
+                            <td>82,114,224</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>
+                              <img src="img/portugal.png" alt="" /> Portugal
+                            </td>
+                            <td>92,090</td>
+                            <td>10,329,506</td>
+                          </tr>
+                        </table>
+                      </div>
+
+                      <div class="num-area">
+                        <nav aria-label="navigation">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#"
+                                ><i
+                                  class="fas fa-angle-double-left"
+                                  aria-hidden="true"
+                                ></i
+                              ></a>
+                            </li>
+                            <li class="page-item active">
+                              <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#">4</a>
+                            </li>
+                            <li class="page-item">
+                              <a class="page-link" href="#"
+                                ><i
+                                  class="fas fa-angle-double-right"
+                                  aria-hidden="true"
+                                ></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </nav>
+                        <div class="button">
+                          <p>
+                            4 items per page <i class="fas fa-caret-down"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- DYNAMIC SECTION END  -->
+              </div>
+              <!-- TIMEDYN SECTION END -->
+              <!-- CHAT-TASKS SECTION START -->
+              <div class="row">
+                <!-- CHAT START -->
+                <div class="col-6">
+                  <div class="msg">
+                    <div class="chat-page">
+                      <div class="msg-header">
+                        <p>
+                          <i class="fas fa-print"></i> <span>Chat Box </span>
+                          <i class="fab fa-windows"></i>
+                        </p>
+                      </div>
+                      <div class="msg-inbox">
+                        <div class="chats">
+                          <div class="msg-page">
+                            <div class="received-chats">
+                              <div class="received-chats-img">
+                                <img src="img/user-1.jpg" alt="" />
+                              </div>
+                              <div class="received-msg">
+                                <div class="received-msg-inbox">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Maiores consequuntur
+                                    maxime ea nemo! Maiores consequuntur maxime
+                                    ea nemo!
+                                  </p>
+                                  <span class="time">11:01 AM | Yesterday</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="outgoing-chats">
+                              <div class="outgoing-chats-msg">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Maiores consequuntur maxime
+                                  ea nemo!
+                                </p>
+                              </div>
+                              <div class="outgoing-chats-img">
+                                <img src="img/user-2.jpg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="msg-bottom">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Write here and hit enter to send..."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- CHAT END-->
+                <!-- TASK START -->
+                <div class="col-6">
+                  <div class="task">
+                    <div class="task-page">
+                      <div class="task-header">
+                        <p>
+                          <i class="fas fa-list"></i> <span>Tasks List </span>
+                          <i class="fab fa-windows"></i>
+                        </p>
+                      </div>
+                      <div class="msge-inbox">
+                        <div class="check">
+                          <p>
+                            <i class="far fa-square"></i><b>Wash the car </b
+                            ><span>Rejected</span><br /><i class="italic"
+                              >Written by Bob</i
+                            >
+                          </p>
+                        </div>
+                        <div
+                          class="drop-menu"
+                          style="border-bottom: 1px solid rgb(189, 185, 185)"
+                        >
+                          <p>
+                            <i class="far fa-square"></i
+                            ><b>Task with dropdown menu</b><br />By Johnny
+                            <span>NEW</span>
+                          </p>
+                        </div>
+                        <div
+                          class="badgetask"
+                          style="border-bottom: 1px solid rgb(189, 185, 185)"
+                        >
+                          <p>
+                            <i class="far fa-square"></i
+                            ><b>Badge on the right task </b><br />This task has
+                            show on hover actions <span>LATEST TASK</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="end">
+                        <p>Cancel <span>Add Task</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="setting">
+                    <i class="fas fa-cog"></i>
+                  </div>
+                </div>
+                <!-- TASK END -->
+              </div>
+              <!-- CHAT-TASKS SECTION END -->
+            </div>
+          </div>
+          <!-- INFORMATION END -->
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
